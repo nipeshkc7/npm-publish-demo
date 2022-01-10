@@ -11,7 +11,7 @@ function init() {
                 type: "list",
                 name: "template",
                 message: `what template do you wanna use? `,
-                choices: templates
+                choices: ['react', 'vue', 'angular']
             },
             {
                 type: "question",
