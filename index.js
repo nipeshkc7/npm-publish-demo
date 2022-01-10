@@ -3,6 +3,7 @@
 const inquirer = require('inquirer');
 const axios = require('axios');
 
+console.log("Hello npm user!");
 inquirer
   .prompt([
     {

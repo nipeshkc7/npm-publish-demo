@@ -1,14 +1,12 @@
 {
   "name": "npm-tool-8687",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "First npm package published",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": {
-    "npm-tool-8687": "./index.js"
-  },
+  "bin": "./index.js",
   "author": "Arpan Kc",
   "license": "ISC",
   "dependencies": {
