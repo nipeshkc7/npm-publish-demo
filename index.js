@@ -2,22 +2,23 @@
 
 const path = require('path');
 const inquirer = require('inquirer');
+const axios = require('axios');
 
 function init() {
 
     inquirer
         .prompt([
-            {
-                type: "list",
-                name: "template",
-                message: `what template do you wanna use? `,
-                choices: ['react', 'vue', 'angular']
-            },
+            // {
+            //     type: "list",
+            //     name: "template",
+            //     message: `what template do you wanna use? `,
+            //     choices: ['react', 'vue', 'angular']
+            // },
             {
                 type: "question",
-                name: "projectName",
-                message: "Name of the project, default",
-                default: path.basename(path.resolve())
+                name: "pokemonName",
+                message: "Name of pokemon",
+                default: "pikachu" 
             }
         ])
         .then((answers) => {
